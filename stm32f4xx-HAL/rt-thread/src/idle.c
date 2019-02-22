@@ -150,7 +150,7 @@ void rt_thread_idle_excute(void)
 {
     /* Loop until there is no dead thread. So one call to rt_thread_idle_excute
      * will do all the cleanups. */
-    while (_has_defunct_thread())
+     while (_has_defunct_thread())
     {
         rt_base_t lock;
         rt_thread_t thread;

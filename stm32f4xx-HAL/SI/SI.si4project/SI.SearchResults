@@ -1,18 +1,80 @@
----- at_inet_init Matches (3 in 2 files) ----
-af_inet.h (rt-thread\components\net\sal_socket\impl) line 26 : 
-/* AT protocol family register */
-int at_inet_init(void);
-#endif
+---- PPPERR_USER Matches (13 in 9 files) ----
+pppLinkStatusCallback in main.c (applications) : 
+        }
+    case PPPERR_USER: {            /* User interrupt. */
+        LOG_E("pppLinkStatusCallback: PPPERR_USER\n");
+        break;
+        }
+    case PPPERR_CONNECT: {         /* Connection lost. */
+pppLinkStatusCallback in main.c (applications) : 
 
-#ifdef __cplusplus
-af_inet_at.c (rt-thread\components\net\sal_socket\impl) line 113 : 
-
-int at_inet_init(void)
+    if (errCode == PPPERR_USER) {
+        ppp_free(pcb);
+        ppp_close(pcb, 0);
+        return;
+pppClose in ppp.c (rt-thread\components\net\lwip-1.4.1\src\netif\ppp) : 
+    PPPDEBUG(LOG_DEBUG, ("pppClose: unit %d kill_link -> pppStop\n", pd));
+    pc->errCode = PPPERR_USER;
+    /* This will leave us at PHASE_DEAD. */
+    pppStop(pd);
+  } else
+pppClose in ppp.c (rt-thread\components\net\lwip-1.4.1\src\netif\ppp) : 
+    PPPDEBUG(LOG_DEBUG, ("pppClose: unit %d kill_link -> pppStop\n", pd));
+    pc->errCode = PPPERR_USER;
+    /* This will leave us at PHASE_DEAD. */
+    pppStop(pd);
+#if PPP_INPROC_OWNTHREAD
+ppp_close in ppp.c (rt-thread\components\net\lwip-2.0.2\src\netif\ppp) : 
 {
-    sal_proto_family_register(&at_inet_family);
+  pcb->err_code = PPPERR_USER;
 
-at_inet_init in af_inet_at.c (rt-thread\components\net\sal_socket\impl) : 
-}
-INIT_COMPONENT_EXPORT(at_inet_init);
+  /* holdoff phase, cancel the reconnection */
+  if (pcb->phase == PPP_PHASE_HOLDOFF) {
+ppp_close in ppp.c (rt-thread\components\net\lwip-2.1.0\src\netif\ppp) : 
 
-#endif /* SAL_USING_AT */
+  pcb->err_code = PPPERR_USER;
+
+  /* holdoff phase, cancel the reconnection */
+  if (pcb->phase == PPP_PHASE_HOLDOFF) {
+ppp.h (rt-thread\components\net\lwip-1.4.1\src\netif\ppp) line 70 : 
+#define PPPERR_ALLOC    -4 /* Unable to allocate resources. */
+#define PPPERR_USER     -5 /* User interrupt. */
+#define PPPERR_CONNECT  -6 /* Connection lost. */
+#define PPPERR_AUTHFAIL -7 /* Failed authentication challenge. */
+#define PPPERR_PROTOCOL -8 /* Failed to meet protocol. */
+ppp.h (rt-thread\components\net\lwip-2.0.2\src\include\netif\ppp) line 131 : 
+#define PPPERR_ALLOC        4  /* Unable to allocate resources. */
+#define PPPERR_USER         5  /* User interrupt. */
+#define PPPERR_CONNECT      6  /* Connection lost. */
+#define PPPERR_AUTHFAIL     7  /* Failed authentication challenge. */
+#define PPPERR_PROTOCOL     8  /* Failed to meet protocol. */
+ppp.h (rt-thread\components\net\lwip-2.1.0\src\include\netif\ppp) line 135 : 
+#define PPPERR_ALLOC        4  /* Unable to allocate resources. */
+#define PPPERR_USER         5  /* User interrupt. */
+#define PPPERR_CONNECT      6  /* Connection lost. */
+#define PPPERR_AUTHFAIL     7  /* Failed authentication challenge. */
+#define PPPERR_PROTOCOL     8  /* Failed to meet protocol. */
+ppp.txt (rt-thread\components\net\lwip-2.0.2\doc) line 116 : 
+    }
+    case PPPERR_USER: {
+      printf("status_cb: User interrupt\n");
+      break;
+    }
+ppp.txt (rt-thread\components\net\lwip-2.0.2\doc) line 164 : 
+  /* ppp_close() was previously called, don't reconnect */
+  if (err_code == PPPERR_USER) {
+    /* ppp_free(); -- can be called here */
+    return;
+  }
+ppp.txt (rt-thread\components\net\lwip-2.1.0\doc) line 116 : 
+    }
+    case PPPERR_USER: {
+      printf("status_cb: User interrupt\n");
+      break;
+    }
+ppp.txt (rt-thread\components\net\lwip-2.1.0\doc) line 164 : 
+  /* ppp_close() was previously called, don't reconnect */
+  if (err_code == PPPERR_USER) {
+    /* ppp_free(); -- can be called here */
+    return;
+  }

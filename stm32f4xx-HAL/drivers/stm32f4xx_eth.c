@@ -704,7 +704,7 @@ int rt_hw_stm32_eth_init(void)
 	/* start phy monitor */        
     tid = rt_thread_create("phy", phy_monitor_thread_entry, RT_NULL, 1024, RT_THREAD_PRIORITY_MAX - 2, 2);
     if (tid != RT_NULL)
-            rt_thread_startup(tid);
+        rt_thread_startup(tid);
 
 	return 0;
 }

@@ -13,16 +13,16 @@
       <pCCUsed>5060300::V5.06 update 3 (build 300)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
-          <Device>STM32F407ZG</Device>
+          <Device>STM32F407VG</Device>
           <Vendor>STMicroelectronics</Vendor>
           <PackID>Keil.STM32F4xx_DFP.1.0.8</PackID>
           <PackURL>http://www.keil.com/pack</PackURL>
           <Cpu>IRAM(0x20000000,0x20000) IRAM2(0x10000000,0x10000) IROM(0x08000000,0x100000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_1024 -FS08000000 -FL0100000 -FP0($$Device:STM32F407ZG$Flash\STM32F4xx_1024.FLM))</FlashDriverDll>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_1024 -FS08000000 -FL0100000 -FP0($$Device:STM32F407VG$Flash\STM32F4xx_1024.FLM))</FlashDriverDll>
           <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:STM32F407ZG$Device\Include\stm32f4xx.h</RegisterFile>
+          <RegisterFile>$$Device:STM32F407VG$Device\Include\stm32f4xx.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -32,7 +32,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>$$Device:STM32F407ZG$SVD\STM32F40x.svd</SFDFile>
+          <SFDFile>$$Device:STM32F407VG$SVD\STM32F40x.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>MQTT_DIRECT, IOTX_NET_INIT_WITH_PK_EXT, MQTT_COMM_ENABLED, USE_HAL_DRIVER, STM32F407xx, SERVICE_OTA_ENABLED, OTA_SIGNAL_CHANNEL=1, IOTX_WITHOUT_ITLS, RT_USING_ARM_LIBC, _PLATFORM_IS_RTTHREAD_</Define>
               <Undefine></Undefine>
-              <IncludePath>.;rt-thread\include;applications;.;drivers;Libraries\CMSIS\Device\ST\STM32F4xx\Include;Libraries\CMSIS\Include;Libraries\STM32F4xx_HAL_Driver\Inc;packages\ali-iotkit-latest\iotkit-embedded\src\packages\iot-coap-c;packages\ali-iotkit-latest\iotkit-embedded\src\log\LITE-log;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT\MQTTPacket;packages\ali-iotkit-latest\iotkit-embedded\src\ota\Link-OTA;packages\ali-iotkit-latest\iotkit-embedded\src\packages\LITE-utils;packages\ali-iotkit-latest\iotkit-embedded\src\system\iotkit-system;packages\ali-iotkit-latest\iotkit-embedded\src\utils\misc;packages\ali-iotkit-latest\iotkit-embedded\src\utils\digest;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\exports;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\imports;packages\at_device-latest;packages\cJSON-v1.0.2;packages\mbedtls-v2.6.0\mbedtls\include;packages\mbedtls-v2.6.0\mbedtls\include\mbedtls;packages\mbedtls-v2.6.0\ports\inc;packages\netutils-latest\ntp;packages\netutils-latest\ping;packages\netutils-latest\telnet;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m4;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\spi;rt-thread\components\drivers\include;rt-thread\components\drivers\spi\sfud\inc;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;rt-thread\components\libc\compilers\common;rt-thread\components\net\at\include;rt-thread\components\net\at\at_socket;rt-thread\components\net\freemodbus\modbus\include;rt-thread\components\net\freemodbus\modbus\rtu;rt-thread\components\net\freemodbus\port;rt-thread\components\net\lwip-2.1.0\src;rt-thread\components\net\lwip-2.1.0\src\include;rt-thread\components\net\lwip-2.1.0\src\arch\include;rt-thread\components\net\lwip-2.1.0\src\include\netif;rt-thread\components\net\sal_socket\include;rt-thread\components\net\sal_socket\include\socket;rt-thread\components\net\sal_socket\impl;rt-thread\components\net\sal_socket\include\dfs_net;rt-thread\components\net\sal_socket\include\dfs_net\sys_select;rt-thread\components\net\sal_socket\include\socket\sys_socket</IncludePath>
+              <IncludePath>.;rt-thread\include;applications;.;drivers;Libraries\CMSIS\Device\ST\STM32F4xx\Include;Libraries\CMSIS\Include;Libraries\STM32F4xx_HAL_Driver\Inc;packages\ali-iotkit-latest\iotkit-embedded\src\packages\iot-coap-c;packages\ali-iotkit-latest\iotkit-embedded\src\log\LITE-log;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT\MQTTPacket;packages\ali-iotkit-latest\iotkit-embedded\src\ota\Link-OTA;packages\ali-iotkit-latest\iotkit-embedded\src\packages\LITE-utils;packages\ali-iotkit-latest\iotkit-embedded\src\system\iotkit-system;packages\ali-iotkit-latest\iotkit-embedded\src\utils\misc;packages\ali-iotkit-latest\iotkit-embedded\src\utils\digest;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\exports;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\imports;packages\at_device-latest;packages\cJSON-v1.0.2;packages\mbedtls-v2.6.0\mbedtls\include;packages\mbedtls-v2.6.0\mbedtls\include\mbedtls;packages\mbedtls-v2.6.0\ports\inc;packages\netutils-latest\ntp;packages\netutils-latest\ping;packages\netutils-latest\telnet;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m4;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\spi;rt-thread\components\drivers\include;rt-thread\components\drivers\spi\sfud\inc;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;rt-thread\components\libc\compilers\common;rt-thread\components\net\at\include;rt-thread\components\net\at\at_socket;rt-thread\components\net\freemodbus\modbus\include;rt-thread\components\net\freemodbus\modbus\rtu;rt-thread\components\net\freemodbus\port;rt-thread\components\net\lwip-2.1.0\src;rt-thread\components\net\lwip-2.1.0\src\include;rt-thread\components\net\lwip-2.1.0\src\arch\include;rt-thread\components\net\lwip-2.1.0\src\include\netif;rt-thread\components\net\lwip-2.1.0\src\netif\ppp;rt-thread\components\net\sal_socket\include;rt-thread\components\net\sal_socket\include\socket;rt-thread\components\net\sal_socket\impl;rt-thread\components\net\sal_socket\include\dfs_net;rt-thread\components\net\sal_socket\include\dfs_net\sys_select;rt-thread\components\net\sal_socket\include\socket\sys_socket;rt-thread\components\utilities\ulog</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1007,7 +1007,7 @@
                 <vShortEn>2</vShortEn>
                 <vShortWch>2</vShortWch>
                 <v6Lto>0</v6Lto>
-                <v6WtE>2</v6WtE>
+                <v6WtE>0</v6WtE>
                 <v6Rtti>2</v6Rtti>
                 <VariousControls>
                   <MiscControls></MiscControls>
@@ -1810,7 +1810,7 @@
                 <vShortEn>2</vShortEn>
                 <vShortWch>2</vShortWch>
                 <v6Lto>0</v6Lto>
-                <v6WtE>2</v6WtE>
+                <v6WtE>0</v6WtE>
                 <v6Rtti>2</v6Rtti>
                 <VariousControls>
                   <MiscControls> --c99</MiscControls>
@@ -2300,6 +2300,156 @@
               <FileType>1</FileType>
               <FilePath>rt-thread\components\net\lwip-2.1.0\src\core\ipv4\ip4_addr.c</FilePath>
             </File>
+            <File>
+              <FileName>auth.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\auth.c</FilePath>
+            </File>
+            <File>
+              <FileName>ccp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\ccp.c</FilePath>
+            </File>
+            <File>
+              <FileName>chap-md5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\chap-md5.c</FilePath>
+            </File>
+            <File>
+              <FileName>chap_ms.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\chap_ms.c</FilePath>
+            </File>
+            <File>
+              <FileName>chap-new.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\chap-new.c</FilePath>
+            </File>
+            <File>
+              <FileName>demand.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\demand.c</FilePath>
+            </File>
+            <File>
+              <FileName>eap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\eap.c</FilePath>
+            </File>
+            <File>
+              <FileName>ppp_ecp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\ecp.c</FilePath>
+            </File>
+            <File>
+              <FileName>eui64.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\eui64.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\fsm.c</FilePath>
+            </File>
+            <File>
+              <FileName>ipcp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\ipcp.c</FilePath>
+            </File>
+            <File>
+              <FileName>ipv6cp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\ipv6cp.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\lcp.c</FilePath>
+            </File>
+            <File>
+              <FileName>magic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\magic.c</FilePath>
+            </File>
+            <File>
+              <FileName>mppe.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\mppe.c</FilePath>
+            </File>
+            <File>
+              <FileName>multilink.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\multilink.c</FilePath>
+            </File>
+            <File>
+              <FileName>ppp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\ppp.c</FilePath>
+            </File>
+            <File>
+              <FileName>pppapi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\pppapi.c</FilePath>
+            </File>
+            <File>
+              <FileName>pppcrypt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\pppcrypt.c</FilePath>
+            </File>
+            <File>
+              <FileName>pppoe.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\pppoe.c</FilePath>
+            </File>
+            <File>
+              <FileName>pppol2tp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\pppol2tp.c</FilePath>
+            </File>
+            <File>
+              <FileName>pppos.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\pppos.c</FilePath>
+            </File>
+            <File>
+              <FileName>upap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\upap.c</FilePath>
+            </File>
+            <File>
+              <FileName>utils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\utils.c</FilePath>
+            </File>
+            <File>
+              <FileName>vj.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\vj.c</FilePath>
+            </File>
+            <File>
+              <FileName>polarssl_arc4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\polarssl\arc4.c</FilePath>
+            </File>
+            <File>
+              <FileName>polarssl_des.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\polarssl\des.c</FilePath>
+            </File>
+            <File>
+              <FileName>polarssl_md4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\polarssl\md4.c</FilePath>
+            </File>
+            <File>
+              <FileName>polarssl_md5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\polarssl\md5.c</FilePath>
+            </File>
+            <File>
+              <FileName>polarssl_sha1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\net\lwip-2.1.0\src\netif\ppp\polarssl\sha1.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2344,6 +2494,21 @@
               <FileName>dfs_net.c</FileName>
               <FileType>1</FileType>
               <FilePath>rt-thread\components\net\sal_socket\dfs_net\dfs_net.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Utilities</GroupName>
+          <Files>
+            <File>
+              <FileName>ulog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\utilities\ulog\ulog.c</FilePath>
+            </File>
+            <File>
+              <FileName>console_be.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\utilities\ulog\backend\console_be.c</FilePath>
             </File>
           </Files>
         </Group>
