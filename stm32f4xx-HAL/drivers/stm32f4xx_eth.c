@@ -658,6 +658,19 @@ static void phy_monitor_thread_entry(void *parameter)
     } /* while(1) */
 }
 
+void ethernet_set_up(void)
+{
+	/* set default netif. */
+	netif_set_default(stm32_eth_device.parent.netif);
+	/* set link up. */
+    eth_device_linkchange(&stm32_eth_device.parent, RT_TRUE);
+}
+
+void ethernet_set_down(void)
+{
+	/* set link down. */
+    eth_device_linkchange(&stm32_eth_device.parent, RT_FALSE);
+}
 
 int rt_hw_stm32_eth_init(void)
 {
@@ -697,9 +710,7 @@ int rt_hw_stm32_eth_init(void)
     if (state == RT_EOK)
         STM32_ETH_PRINTF("eth_device_init success\r\n");
     else
-        STM32_ETH_PRINTF("eth_device_init faild: %d\r\n", state);
-    
-//    eth_device_linkchange(&stm32_eth_device.parent, RT_TRUE);
+        STM32_ETH_PRINTF("eth_device_init faild: %d\r\n", state);   
 
 	/* start phy monitor */        
     tid = rt_thread_create("phy", phy_monitor_thread_entry, RT_NULL, 1024, RT_THREAD_PRIORITY_MAX - 2, 2);

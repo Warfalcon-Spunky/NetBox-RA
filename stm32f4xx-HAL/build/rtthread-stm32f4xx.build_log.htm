@@ -22,20 +22,22 @@ Dialog DLL:      TCM.DLL V1.14.14.0
  
 <h2>Project:</h2>
 D:\Project\NetBox-RA\stm32f4xx-HAL\project.uvprojx
-Project File Date:  02/22/2019
+Project File Date:  02/26/2019
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'rt-thread_stm32f4xx'
-compiling main.c...
-applications\main.c(148): warning:  #550-D: variable "client_odev_rx_ind" was set but never used
-  static rt_err_t (*client_odev_rx_ind)(rt_device_t dev, rt_size_t size) = RT_NULL;
-applications\main.c: 1 warning, 0 errors
+compiling at_socket_sim800c.c...
+packages\at_device-latest\at_socket_sim800c.c(283): warning:  #177-D: function "sim800c_power_on" was declared but never referenced
+  static void sim800c_power_on(void)
+packages\at_device-latest\at_socket_sim800c.c(298): warning:  #177-D: function "sim800c_power_off" was declared but never referenced
+  static void sim800c_power_off(void)
+packages\at_device-latest\at_socket_sim800c.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=517614 RO-data=99070 RW-data=1844 ZI-data=70140  
+Program Size: Code=519526 RO-data=98986 RW-data=1848 ZI-data=70280  
 FromELF: creating hex file...
 After Build - User command #1: fromelf --bin .\build\rtthread-stm32f4xx.axf --output rtthread-stm32f4xx.bin
-".\build\rtthread-stm32f4xx.axf" - 0 Error(s), 1 Warning(s).
+".\build\rtthread-stm32f4xx.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   D:\Project\NetBox-RA\stm32f4xx-HAL\RTE
