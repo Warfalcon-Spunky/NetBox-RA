@@ -74,6 +74,18 @@
 #define DFS_FILESYSTEMS_MAX 2
 #define DFS_FILESYSTEM_TYPES_MAX 2
 #define DFS_FD_MAX 16
+#define RT_USING_DFS_ELMFAT
+
+/* elm-chan's FatFs, Generic FAT Filesystem Module */
+
+#define RT_DFS_ELM_CODE_PAGE 437
+#define RT_DFS_ELM_WORD_ACCESS
+#define RT_DFS_ELM_USE_LFN_3
+#define RT_DFS_ELM_USE_LFN 3
+#define RT_DFS_ELM_MAX_LFN 255
+#define RT_DFS_ELM_DRIVES 2
+#define RT_DFS_ELM_MAX_SECTOR_SIZE 4096
+#define RT_DFS_ELM_REENTRANT
 #define RT_USING_DFS_DEVFS
 
 /* Device Drivers */
@@ -99,6 +111,16 @@
 
 /* Using USB */
 
+#define RT_USING_USB_DEVICE
+#define RT_USBD_THREAD_STACK_SZ 4096
+#define USB_VENDOR_ID 0x0FFE
+#define USB_PRODUCT_ID 0x0001
+#define _RT_USB_DEVICE_CDC
+#define RT_USB_DEVICE_CDC
+#define RT_VCOM_TASK_STK_SIZE 512
+#define RT_VCOM_SERNO "32021919830108"
+#define RT_VCOM_SER_LEN 14
+#define RT_VCOM_TX_TIMEOUT 1000
 
 /* POSIX layer and C standard library */
 
@@ -141,7 +163,7 @@
 #define RT_LWIP_PPP
 #define RT_LWIP_PPPOS
 #define RT_MEMP_NUM_NETCONN 8
-#define RT_LWIP_PBUF_NUM 16
+#define RT_LWIP_PBUF_NUM 8
 #define RT_LWIP_RAW_PCB_NUM 4
 #define RT_LWIP_UDP_PCB_NUM 4
 #define RT_LWIP_TCP_PCB_NUM 4
@@ -214,6 +236,8 @@
 #define PKG_NETUTILS_NTP
 #define NETUTILS_NTP_TIMEZONE 8
 #define NETUTILS_NTP_HOSTNAME "cn.ntp.org.cn"
+#define NETUTILS_NTP_HOSTNAME2 "ntp.rt-thread.org"
+#define NETUTILS_NTP_HOSTNAME3 "edu.ntp.org.cn"
 #define PKG_NETUTILS_TELNET
 #define PKG_USING_NETUTILS_LATEST_VERSION
 #define PKG_USING_AT_DEVICE
@@ -261,13 +285,28 @@
 
 /* tools packages */
 
+#define PKG_USING_EASYFLASH
+#define PKG_EASYFLASH_ENV
+#define PKG_EASYFLASH_ENV_AUTO_UPDATE
+#define PKG_EASYFLASH_ENV_VER_NUM 0
+#define PKG_EASYFLASH_ERASE_GRAN 4096
+#define PKG_EASYFLASH_WRITE_GRAN_1BIT
+#define PKG_EASYFLASH_WRITE_GRAN 1
+#define PKG_EASYFLASH_START_ADDR 0
+#define PKG_EASYFLASH_DEBUG
+#define PKG_USING_EASYFLASH_LATEST_VERSION
+#define PKG_EASYFLASH_VER_NUM 0x99999
 
 /* system packages */
 
+#define PKG_USING_FAL
+#define FAL_DEBUG_CONFIG
+#define FAL_DEBUG 1
+#define FAL_PART_HAS_TABLE_CFG
+#define PKG_USING_FAL_LATEST_VERSION
+#define PKG_FAL_VER_NUM 0x99999
 
 /* peripheral libraries and drivers */
-
-/* sensors drivers */
 
 
 /* miscellaneous packages */

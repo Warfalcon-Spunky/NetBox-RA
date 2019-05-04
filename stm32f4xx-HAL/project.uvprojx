@@ -333,9 +333,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>MQTT_DIRECT, IOTX_NET_INIT_WITH_PK_EXT, MQTT_COMM_ENABLED, USE_HAL_DRIVER, STM32F407xx, SERVICE_OTA_ENABLED, OTA_SIGNAL_CHANNEL=1, IOTX_WITHOUT_ITLS, RT_USING_ARM_LIBC, _PLATFORM_IS_RTTHREAD_</Define>
+              <Define>MQTT_DIRECT, IOTX_NET_INIT_WITH_PK_EXT, MQTT_COMM_ENABLED, USE_HAL_DRIVER, STM32F407xx, SERVICE_OTA_ENABLED, OTA_SIGNAL_CHANNEL=1, IOTX_WITHOUT_ITLS, IOTX_WITHOUT_TLS, RT_USING_ARM_LIBC, _PLATFORM_IS_RTTHREAD_</Define>
               <Undefine></Undefine>
-              <IncludePath>.;rt-thread\include;applications;.;drivers;Libraries\CMSIS\Device\ST\STM32F4xx\Include;Libraries\CMSIS\Include;Libraries\STM32F4xx_HAL_Driver\Inc;packages\ali-iotkit-latest\iotkit-embedded\src\packages\iot-coap-c;packages\ali-iotkit-latest\iotkit-embedded\src\log\LITE-log;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT\MQTTPacket;packages\ali-iotkit-latest\iotkit-embedded\src\ota\Link-OTA;packages\ali-iotkit-latest\iotkit-embedded\src\packages\LITE-utils;packages\ali-iotkit-latest\iotkit-embedded\src\system\iotkit-system;packages\ali-iotkit-latest\iotkit-embedded\src\utils\misc;packages\ali-iotkit-latest\iotkit-embedded\src\utils\digest;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\exports;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\imports;packages\at_device-latest;packages\cJSON-v1.0.2;packages\mbedtls-v2.6.0\mbedtls\include;packages\mbedtls-v2.6.0\mbedtls\include\mbedtls;packages\mbedtls-v2.6.0\ports\inc;packages\netutils-latest\ntp;packages\netutils-latest\ping;packages\netutils-latest\telnet;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m4;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\spi;rt-thread\components\drivers\include;rt-thread\components\drivers\spi\sfud\inc;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;rt-thread\components\libc\compilers\common;rt-thread\components\net\at\include;rt-thread\components\net\at\at_socket;rt-thread\components\net\freemodbus\modbus\include;rt-thread\components\net\freemodbus\modbus\rtu;rt-thread\components\net\freemodbus\port;rt-thread\components\net\lwip-2.1.0\src;rt-thread\components\net\lwip-2.1.0\src\include;rt-thread\components\net\lwip-2.1.0\src\arch\include;rt-thread\components\net\lwip-2.1.0\src\include\netif;rt-thread\components\net\lwip-2.1.0\src\netif\ppp;rt-thread\components\net\sal_socket\include;rt-thread\components\net\sal_socket\include\socket;rt-thread\components\net\sal_socket\impl;rt-thread\components\net\sal_socket\include\dfs_net;rt-thread\components\net\sal_socket\include\dfs_net\sys_select;rt-thread\components\net\sal_socket\include\socket\sys_socket;rt-thread\components\utilities\ulog</IncludePath>
+              <IncludePath>.;rt-thread\include;applications;.;drivers;Libraries\CMSIS\Device\ST\STM32F4xx\Include;Libraries\CMSIS\Include;Libraries\STM32F4xx_HAL_Driver\Inc;packages\ali-iotkit-latest\iotkit-embedded\src\packages\iot-coap-c;packages\ali-iotkit-latest\iotkit-embedded\src\log\LITE-log;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT\MQTTPacket;packages\ali-iotkit-latest\iotkit-embedded\src\ota\Link-OTA;packages\ali-iotkit-latest\iotkit-embedded\src\packages\LITE-utils;packages\ali-iotkit-latest\iotkit-embedded\src\system\iotkit-system;packages\ali-iotkit-latest\iotkit-embedded\src\utils\misc;packages\ali-iotkit-latest\iotkit-embedded\src\utils\digest;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\exports;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\imports;packages\at_device-latest;packages\cJSON-v1.0.2;packages\EasyFlash-latest\inc;packages\fal-latest\inc;packages\mbedtls-v2.6.0\mbedtls\include;packages\mbedtls-v2.6.0\mbedtls\include\mbedtls;packages\mbedtls-v2.6.0\ports\inc;packages\netutils-latest\ntp;packages\netutils-latest\ping;packages\netutils-latest\telnet;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m4;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\dfs\filesystems\elmfat;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\spi;rt-thread\components\drivers\include;rt-thread\components\drivers\spi\sfud\inc;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\usb\usbdevice;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;rt-thread\components\libc\compilers\common;rt-thread\components\net\at\include;rt-thread\components\net\at\at_socket;rt-thread\components\net\freemodbus\modbus\include;rt-thread\components\net\freemodbus\modbus\rtu;rt-thread\components\net\freemodbus\port;rt-thread\components\net\lwip-2.1.0\src;rt-thread\components\net\lwip-2.1.0\src\include;rt-thread\components\net\lwip-2.1.0\src\arch\include;rt-thread\components\net\lwip-2.1.0\src\include\netif;rt-thread\components\net\lwip-2.1.0\src\netif\ppp;rt-thread\components\net\sal_socket\include;rt-thread\components\net\sal_socket\include\socket;rt-thread\components\net\sal_socket\impl;rt-thread\components\net\sal_socket\include\dfs_net;rt-thread\components\net\sal_socket\include\dfs_net\sys_select;rt-thread\components\net\sal_socket\include\socket\sys_socket;rt-thread\components\utilities\ulog;.\porting</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -369,7 +369,7 @@
             <ScatterFile>.\stm32_rom.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
-            <Misc> --keep *.o(.rti_fn.*)   --keep *.o(FSymTab)</Misc>
+            <Misc>--keep *.o(.rti_fn.*)   --keep *.o(FSymTab)</Misc>
             <LinkerInputFile></LinkerInputFile>
             <DisabledWarnings></DisabledWarnings>
           </LDads>
@@ -469,6 +469,11 @@
               <FileType>1</FileType>
               <FilePath>applications\main.c</FilePath>
             </File>
+            <File>
+              <FileName>mqtt-device.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\mqtt-device.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -513,6 +518,11 @@
               <FileName>drv_iwg.c</FileName>
               <FileType>1</FileType>
               <FilePath>drivers\drv_iwg.c</FilePath>
+            </File>
+            <File>
+              <FileName>drv_usbd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>drivers\drv_usbd.c</FilePath>
             </File>
             <File>
               <FileName>drv_rtc.c</FileName>
@@ -1038,16 +1048,6 @@
           </GroupOption>
           <Files>
             <File>
-              <FileName>mqtt-example.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\ali-iotkit-latest\samples\mqtt\mqtt-example.c</FilePath>
-            </File>
-            <File>
-              <FileName>ota_mqtt-example.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\ali-iotkit-latest\samples\ota\ota_mqtt-example.c</FilePath>
-            </File>
-            <File>
               <FileName>iotx_ca_cert.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\ali-iotkit-latest\iotkit-embedded\src\coap\iotx_ca_cert.c</FilePath>
@@ -1296,6 +1296,159 @@
               <FileName>cJSON_util.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\cJSON-v1.0.2\cJSON_util.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>EasyFlash</GroupName>
+          <Files>
+            <File>
+              <FileName>easyflash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\EasyFlash-latest\src\easyflash.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_cmd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\EasyFlash-latest\src\ef_cmd.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_env.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\EasyFlash-latest\src\ef_env.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_env_legacy.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\EasyFlash-latest\src\ef_env_legacy.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_env_legacy_wl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\EasyFlash-latest\src\ef_env_legacy_wl.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_iap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\EasyFlash-latest\src\ef_iap.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_log.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\EasyFlash-latest\src\ef_log.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_utils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\EasyFlash-latest\src\ef_utils.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_fal_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\packages\EasyFlash-latest\ports\ef_fal_port.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>fal</GroupName>
+          <GroupOption>
+            <CommonProperty>
+              <UseCPPCompiler>0</UseCPPCompiler>
+              <RVCTCodeConst>0</RVCTCodeConst>
+              <RVCTZI>0</RVCTZI>
+              <RVCTOtherData>0</RVCTOtherData>
+              <ModuleSelection>0</ModuleSelection>
+              <IncludeInBuild>1</IncludeInBuild>
+              <AlwaysBuild>0</AlwaysBuild>
+              <GenerateAssemblyFile>0</GenerateAssemblyFile>
+              <AssembleAssemblyFile>0</AssembleAssemblyFile>
+              <PublicsOnly>0</PublicsOnly>
+              <StopOnExitCode>3</StopOnExitCode>
+              <CustomArgument></CustomArgument>
+              <IncludeLibraryModules></IncludeLibraryModules>
+              <ComprImg>0</ComprImg>
+            </CommonProperty>
+            <GroupArmAds>
+              <Cads>
+                <interw>2</interw>
+                <Optim>0</Optim>
+                <oTime>2</oTime>
+                <SplitLS>2</SplitLS>
+                <OneElfS>2</OneElfS>
+                <Strict>2</Strict>
+                <EnumInt>2</EnumInt>
+                <PlainCh>2</PlainCh>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <wLevel>0</wLevel>
+                <uThumb>2</uThumb>
+                <uSurpInc>2</uSurpInc>
+                <uC99>2</uC99>
+                <useXO>2</useXO>
+                <v6Lang>0</v6Lang>
+                <v6LangP>0</v6LangP>
+                <vShortEn>2</vShortEn>
+                <vShortWch>2</vShortWch>
+                <v6Lto>0</v6Lto>
+                <v6WtE>2</v6WtE>
+                <v6Rtti>2</v6Rtti>
+                <VariousControls>
+                  <MiscControls> --c99</MiscControls>
+                  <Define> </Define>
+                  <Undefine> </Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Cads>
+              <Aads>
+                <interw>2</interw>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <thumb>2</thumb>
+                <SplitLS>2</SplitLS>
+                <SwStkChk>2</SwStkChk>
+                <NoWarn>2</NoWarn>
+                <uSurpInc>2</uSurpInc>
+                <useXO>2</useXO>
+                <uClangAs>2</uClangAs>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Aads>
+            </GroupArmAds>
+          </GroupOption>
+          <Files>
+            <File>
+              <FileName>fal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\fal-latest\src\fal.c</FilePath>
+            </File>
+            <File>
+              <FileName>fal_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\fal-latest\src\fal_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>fal_partition.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\fal-latest\src\fal_partition.c</FilePath>
+            </File>
+            <File>
+              <FileName>fal_rtt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\fal-latest\src\fal_rtt.c</FilePath>
+            </File>
+            <File>
+              <FileName>fal_flash_sfud_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\porting\fal_flash_sfud_port.c</FilePath>
+            </File>
+            <File>
+              <FileName>fal_flash_stm32f4_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\porting\fal_flash_stm32f4_port.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1767,6 +1920,21 @@
               <FileType>1</FileType>
               <FilePath>rt-thread\components\dfs\filesystems\devfs\devfs.c</FilePath>
             </File>
+            <File>
+              <FileName>dfs_elm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\dfs\filesystems\elmfat\dfs_elm.c</FilePath>
+            </File>
+            <File>
+              <FileName>ff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\dfs\filesystems\elmfat\ff.c</FilePath>
+            </File>
+            <File>
+              <FileName>ccsbcs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\dfs\filesystems\elmfat\option\ccsbcs.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1919,6 +2087,26 @@
               <FileName>watchdog.c</FileName>
               <FileType>1</FileType>
               <FilePath>rt-thread\components\drivers\watchdog\watchdog.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>rt_usbd</GroupName>
+          <Files>
+            <File>
+              <FileName>core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\drivers\usb\usbdevice\core\core.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbdevice.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\drivers\usb\usbdevice\core\usbdevice.c</FilePath>
+            </File>
+            <File>
+              <FileName>cdc_vcom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\components\drivers\usb\usbdevice\class\cdc_vcom.c</FilePath>
             </File>
           </Files>
         </Group>
